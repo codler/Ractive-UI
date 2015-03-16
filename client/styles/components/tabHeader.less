@@ -1,0 +1,117 @@
+li.tabHeader {
+  border-bottom: 2px solid rgba(0, 0, 0, 0); // Makes sure UI doesnt move
+  border-radius: 3px 3px 0 0;
+  color: #666;
+  display: inline-block;
+  min-width: 45px;
+  height: 100%;
+  margin-left: 11px;
+  user-select: none;
+  
+  &.selected, &.tabHeaderFocus {
+    border-bottom: 2px solid @normalThemeColor;
+    
+    a {
+      color: @normalThemeColor;
+    }
+  }
+  
+  &:first-child {
+    margin-left: 0px;
+  }
+  
+  &:hover:not(.selected), &.tabHeaderFocus:not(.selected) {
+    border-bottom: 2px solid #333;
+    
+    a {
+      color: #333;
+    }
+  }
+  
+  a {
+  	.truncateText;
+  	
+    box-sizing: border-box;
+    color: #666;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.6rem;
+    height: 100%;
+    max-width: 180px;
+    padding: 6px 4px 0 8px;
+    text-decoration: none;
+    
+    &:after {
+      // Adding empty space, it is needed when text content are empty
+      content: "\00a0";
+    }
+    
+    &:before {
+      // Adding empty space, to make the text centered
+      content: "\00a0";
+    }
+    
+    &:focus {
+      outline: 0;
+    }
+  }
+  
+  .closeButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    outline: none;
+    padding-left: 2px;
+    width: 10px;
+    height: 11px;
+    vertical-align: top;
+  }
+  
+  .closeButton:hover {
+    background-color: #E0E0E0;
+    border-bottom: 1px solid #CCC;
+    box-shadow: 0 1px #A2A2A2;
+  }
+  
+  .closeButton span {
+    display: block;
+    height: 9px;
+    width: 6px;
+    opacity: 0.4;
+    // @{baseUrl}images/tabClose.png
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGAQAAAADIt9LlAAAAAnRSTlMAAQGU/a4AAAARSURBVHjaYzBgMGA4A4RAGgAOHAJZh2BWlgAAAABJRU5ErkJggg==') no-repeat scroll 0 2px rgba(0, 0, 0, 0);
+  }
+} // end li.tabHeader
+
+// .tabSet.NormalTabSet li.tabHeader (smaller tabs)
+.tabSet.normalTabSet li.tabHeader {
+  
+  margin-left: 0px;
+  border-bottom: none;
+  
+  a {
+    color: #666;
+    font-size: 1.2rem;
+    padding: 5px 12px 6px 9px; 
+  }
+  
+  &:hover:not(.selected), &.tabHeaderFocus:not(.selected) {
+    background-color: #EBEBEB;
+    //border-bottom: none;
+    
+    a {
+      color: #666;
+    }
+  }
+  
+  &.selected, &.tabHeaderFocus {
+    background-color: #13a3f7;
+    //border-bottom: none;
+    
+    a {
+      color: #FFF;
+    }
+  } 
+}
+// End .tabSet.NormalTabSet li.tabHeader

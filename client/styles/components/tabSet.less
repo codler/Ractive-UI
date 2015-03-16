@@ -1,0 +1,43 @@
+.tabSet {
+  border-bottom: 1px solid @lightGreyColor;
+  height: 33px;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  //overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  
+  &.normalTabSet {
+    height: 25px;
+  }
+  
+  > .tabHeader.tabHeaderMore {
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    
+    &:hover {
+      background-color: #F2F2F2;
+    }
+    
+    .dropdown-menu {
+      max-height: 550px; // DAF-2382 - Fallback support for VH units in Safari 7.
+      max-height: ~"calc(100vh - 100px)";
+      overflow: auto;
+    
+      left: auto;
+      right: 0;
+      
+      li {
+        overflow: hidden;
+      }
+      
+      a {
+        display: block;
+        padding-top: 4px;
+        padding-bottom: 4px;
+      }
+    }
+  } 
+} // end .tabSet

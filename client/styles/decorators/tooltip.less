@@ -1,0 +1,58 @@
+.tooltip {
+  
+  &.top    { margin-top:  -6px; padding: @tooltip-arrow-width 0; }
+  &.right  { margin-left:  6px; padding: 0 @tooltip-arrow-width; }
+  &.bottom { margin-top:   6px; padding: @tooltip-arrow-width 0; }
+  &.left   { margin-left: -6px; padding: 0 @tooltip-arrow-width; }
+  
+  &.top .tooltip-arrow {
+    &.error {
+      border-top-color: @errorColor;
+    }
+  }
+  &.top-left .tooltip-arrow {
+    &.error {
+      border-top-color: @errorColor;
+    }
+  }
+  &.top-right .tooltip-arrow {
+    &.error {
+      border-top-color: @errorColor;
+    }
+  }
+  &.right .tooltip-arrow {
+    &.error {
+      border-right-color: @errorColor;
+    }
+  }
+  &.left .tooltip-arrow {
+    &.error {
+      border-left-color: @errorColor;
+    }
+  }
+  &.bottom .tooltip-arrow {
+    &.error {
+      border-bottom-color: @errorColor;
+    }
+  }
+  &.bottom-left .tooltip-arrow {
+    &.error {
+      border-bottom-color: @errorColor;
+    }
+  }
+  &.bottom-right .tooltip-arrow {
+    &.error {
+      border-bottom-color: @errorColor;
+    }
+  }
+}
+
+.tooltip-inner {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  background-color: #333333;
+  
+  &.error {
+    background-color: @errorColor;
+  }
+}

@@ -1,0 +1,47 @@
+.accordion {
+  border-bottom: 1px solid #B3B3B3;
+  font-size: 1.4rem;
+  padding: 4px 0 3px 10px;
+  margin-bottom: 5px;
+  outline: 0;
+  vertical-align: bottom;
+  
+  &:hover{
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #999;
+    color: #1a1a1a;
+    cursor: pointer;
+    
+    span:nth-child(2){
+      opacity: 0.6;
+    }
+  }
+  
+  span:nth-child(2), &.closed span:nth-child(2) {
+    // Image from Infor Control fieldset
+    // @{baseUrl}images/collapsed.png
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHAQAAAAAZ1+HOAAAAAnRSTlMAAQGU/a4AAAAdSURBVHjaY9nfyBL/iOUdA0vJARYHBxbF+yxC9wFQtwcxq7+mEwAAAABJRU5ErkJggg==');
+    background-repeat: no-repeat;
+    float: right;
+    height: 7px;
+    width: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    opacity: 0.4;
+  }
+  
+  &.opened span:nth-child(2) {
+    // Image from Infor Control fieldset
+    // @{baseUrl}images/expanded.png
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHAQAAAAAZ1+HOAAAAAnRSTlMAAQGU/a4AAAAeSURBVHjaY/h8gOHhAYYDBxgaHBh4GBjkGBj2OwAAWzYGvtWzAjsAAAAASUVORK5CYII=');
+  }
+}
+
+.accordionContent {
+  display: none;
+  margin-left: 10px;
+  overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 12px;
+}
+

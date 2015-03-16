@@ -1,0 +1,19 @@
+<ul class="tabSet {{tabType}} {{showMore}}">
+	{{>content}}
+	
+	{{#showMore}}
+	<li class="tabHeader tabHeaderMore dropdown">
+		<a on-click="updateList" decorator="dropdown" data-toggle="dropdown" href="">{{Translation.getString(Translation.MORE)}} <span class="caret"></span></a>
+		<ul class="dropdown-menu">
+			{{#tabs:i}}
+			<li>
+				<a on-click="innerSelect:{{i}}" href="">
+				<span class="{{accessoryType}}"></span>
+				{{text}}
+				</a>
+			</li>
+			{{/tabs}}
+		</ul>
+	</li>
+	{{/showMore}}
+</ul>

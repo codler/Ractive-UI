@@ -1,0 +1,59 @@
+
+
+// From infor control
+.pagingButton {
+  background-color: transparent;
+  border: 0 none;
+  cursor: default;
+  height: 17px;
+  margin: 2px;
+  outline: medium none;
+  width: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.pagingButton.firstPage span { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAd0lEQVR42mNgGF5ASEj4Pwhjk5OTVwxlYmJ6AmT+J9kAVlbWdqjG/yQZkJFdLMDIyHgQTTNxBujoGmoBqfdYNBNnABsb+24cmokzAOj0hRQZAPI/MNQ3k20ADHBycvVSZAAIiIiKpwCpD2QbAPUSKFau4TVgaAIA6DtLCP6f/1kAAAAASUVORK5CYII="); }
+.pagingButton.lastPage span {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbElEQVR42mNgGHbgPxBfy8gu1sImKSQk/B+ECRkAwh9ERMVTKDEAjDk5uXopMgCEmZiYNgO9JEC2ASDMyMi4kCID2NjYd1NiwHsdXUMtsgwAOv0gzP8kG8DKytpOVjQCQ/2JnLxiKLkJaQgCAELVSwjQWq3vAAAAAElFTkSuQmCC"); }
+.pagingButton.nextPage span{ background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAY0lEQVR42mNgGLbgPxBfy8gu1qLEABD+ICIqnkKJAWDMycnVS5EBIMzExLQZ6CUBsg0AYUZGxoUUGcDGxr6bEgPe6+gaapFlANDpB0nxP4oBrKys7WRFIzDUn8jJK4YyDH8AABcOMtDVFS0AAAAAAElFTkSuQmCC");}
+.pagingButton.previousPage span {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAb0lEQVR42mNgGP5ATl4xlImJ6QmQ+Z9kzaysrO1Qjf9JMiAju1iAkZHxIJpm4gzQ0TXUAlLvsWgmzgA2NvbdODQTZwDQ6QspMgDkf2CobybbABjg5OTqpcgAEBARFU8BUh/INgDqJVCsXCPbgMEPAOJkMtC24qPJAAAAAElFTkSuQmCC"); }
+.pagingButton span {
+  display: block;
+    height: 17px;
+    opacity: 0.4;
+    width: 16px;
+  filter: alpha(opacity=40);
+  background-position: center center;
+}
+
+.pagingButton:hover {
+  background-color: #E0E0E0;
+    box-shadow: 0 1px #A2A2A2;
+}
+
+.pagingButton:hover span{
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+}
+
+.pagingButton:active {
+    background-color: #BEBEBE;
+    box-shadow: 0 1px #767676 inset;
+}
+
+.pagingButton:active span{
+  opacity: 0.80;
+  filter: alpha(opacity=80);
+}
+
+.pagingButton[disabled], .pagingButton.disabled {
+  background-color: transparent !important;
+  cursor: default;
+  box-shadow: none;
+}
+
+.pagingButton[disabled] span, .pagingButton.disabled span{
+  opacity: 0.20;
+  filter: alpha(opacity=20);
+}

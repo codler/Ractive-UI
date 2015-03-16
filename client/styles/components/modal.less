@@ -1,0 +1,48 @@
+.modal {
+	background-color: rgba(255, 255, 255, 0.7);
+	
+  .modal-sm {
+    width: 400px;
+    }
+  .modal-content {
+    cursor: default;
+    border: 1px solid #b3b3b3;
+    background: white;
+    padding: 0px 15px 25px;
+    min-width: 200px;
+    min-height: 100px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 0px;
+  }
+  
+  .modal-content {
+    padding-bottom: 10px;
+  }
+  
+  .modal-header {
+    border-bottom: 1px solid #b3b3b3;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 46px;
+  }
+  .modal-title {
+    font-size: 1.6rem;
+  }
+ 
+  .modal-body {
+    color: #666666;
+    font-size: 1.6rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+    max-height: 550px; // DAF-2382 - Fallback support for VH units in Safari 7.
+    max-width: 100%;
+    line-height: 25px;  
+  }
+  .modal-footer {
+    border-top: none;
+    margin-top: 0px;
+    padding-top: 0px;
+    text-align: center;
+  }
+}

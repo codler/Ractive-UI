@@ -1,0 +1,35 @@
+
+// Dropdown start
+.nav > li > a {
+  border: 1px solid transparent;
+  color: #666;
+  display: inline-block;
+  
+  &:hover, &:focus {
+    background-color: #F2F2F2;
+    color: #1A1A1A;
+  }
+  
+  &:focus {
+    border: 1px solid @normalThemeColor;
+  }
+}
+
+.nav .open > a:hover, .nav .open > a:focus {
+  background-color: @normalThemeColor;
+  color: #fff;
+}
+
+.dropdown-menu > li > a {
+  color: #666;
+  font-size: 1.2rem;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  
+  &:hover, &:focus {
+    background-color: #F2F2F2;
+    color: #1A1A1A;
+  }
+}
+
+// dropdown end

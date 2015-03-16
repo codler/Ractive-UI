@@ -1,0 +1,13 @@
+<li class="tabHeader {{selected}} {{focus}}">
+	
+	<a on-focusin="innerFocusIn" on-focusout="innerFocusOut" on-click="innerSelect" href="{{url}}">
+		{{#accessoryType}}
+		<span class="{{accessoryType}}" title="{{accessoryTitle}}"></span>
+		{{/accessoryType}}
+		
+		{{text}}
+	</a>
+	{{#closable}}
+	<button on-click="innerClose" class="closeButton" title="{{Translation.getString(Translation.CLOSE)}}"><span></span></button>
+	{{/closable}}
+</li>
